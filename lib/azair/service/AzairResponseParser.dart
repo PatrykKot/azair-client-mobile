@@ -1,10 +1,15 @@
 import 'package:azair_client/azair/model/ResultModel.dart';
+import 'package:flutter/foundation.dart';
 import 'package:html/parser.dart' as html;
 
 import '../model/FlightModel.dart';
 
 class AzairResponseParser {
-  List<ResultModel> parse(String htmlResponse) {
+  Future<List<ResultModel>> parse(String htmlResponse) async {
+    return await compute(_parseIsolate, htmlResponse);
+  }
+
+  static List<ResultModel> _parseIsolate(String htmlResponse) {
     final htmlDocument = html.parse(htmlResponse);
 
     return htmlDocument.getElementsByClassName("result").map((htmlResult) {

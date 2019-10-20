@@ -1,5 +1,3 @@
-import 'package:azair_client/azair/model/AirportModel.dart';
-
 class SearchModel {
   int adults;
   int maxChangesCount;
@@ -8,8 +6,8 @@ class SearchModel {
   int maxDaysStay;
   int departureDate;
   int arrivalDate;
-  List<AirportModel> fromAirports;
-  List<AirportModel> toAirports;
+  List<String> fromAirports;
+  List<String> toAirports;
 
   SearchModel(
       {this.adults,

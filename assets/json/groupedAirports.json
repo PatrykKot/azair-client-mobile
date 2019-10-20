@@ -1,0 +1,874 @@
+{
+  "LON_ALL": {
+    "name": "Londyn",
+    "ports": "LGW_STN_LTN_LCY_LHR_SEN_BQH"
+  },
+  "STO_ALL": {
+    "name": "Sztokholm",
+    "ports": "ARN_BMA_NYO_VST"
+  },
+  "BAR_ALL": {
+    "name": "Barcelona",
+    "ports": "BCN_GRO_REU"
+  },
+  "DUS_ALL": {
+    "name": "Duesseldorf",
+    "ports": "DUS_NRN_MGL"
+  },
+  "IEV_ALL": {
+    "name": "Kijów",
+    "ports": "IEV_KBP"
+  },
+  "MIL_ALL": {
+    "name": "Mediolan",
+    "ports": "MXP_BGY_LIN"
+  },
+  "MOW_ALL": {
+    "name": "Moskwa",
+    "ports": "DME_SVO_VKO_BKA"
+  },
+  "OSL_ALL": {
+    "name": "Oslo",
+    "ports": "OSL_TRF_RYG"
+  },
+  "HAM_ALL": {
+    "name": "Hamburg",
+    "ports": "HAM_LBC"
+  },
+  "PAR_ALL": {
+    "name": "Paryż",
+    "ports": "CDG_ORY_BVA_XCR_LBG"
+  },
+  "BEL_ALL": {
+    "name": "Belfast",
+    "ports": "BFS_BHD"
+  },
+  "BER_ALL": {
+    "name": "Berlin",
+    "ports": "SXF_TXL"
+  },
+  "BRU_ALL": {
+    "name": "Bruksela",
+    "ports": "BRU_CRL"
+  },
+  "VEN_ALL": {
+    "name": "Wenecja",
+    "ports": "VCE_TSF"
+  },
+  "WAR_ALL": {
+    "name": "Warszawa",
+    "ports": "WAW_WMI"
+  },
+  "BUH_ALL": {
+    "name": "Bukareszt",
+    "ports": "OTP_BBU"
+  },
+  "ROM_ALL": {
+    "name": "Rzym",
+    "ports": "FCO_CIA"
+  },
+  "FRA_ALL": {
+    "name": "Frankfurt",
+    "ports": "FRA_HHN"
+  },
+  "IST_ALL": {
+    "name": "Stambuł",
+    "ports": "IST_SAW"
+  },
+  "REK_ALL": {
+    "name": "Reykjavik",
+    "ports": "RKV_KEF"
+  },
+  "TLV_ALL": {
+    "name": "Tel Awiw-Jafa",
+    "ports": "TLV_SDV"
+  },
+  "GLA_ALL": {
+    "name": "Glasgow",
+    "ports": "PIK_GLA"
+  },
+  "DXW_ALL": {
+    "name": "Dubaj",
+    "ports": "DXB_DWC"
+  },
+  "GOT_ALL": {
+    "name": "Gotheburg",
+    "ports": "GOT_GSE"
+  },
+  "CZNE": {
+    "name": "Czeskie i lotniska w pobliżu",
+    "ports": "PRG_BRQ_KLV_PED_OSR_BTS_KSC_LEJ_CSO_KRK_KTW_WRO_LNZ_VIE_DRS_NUE_BUD_MUC_SZG_SXF_TXL"
+  },
+  "CZMO": {
+    "name": "Morawy",
+    "ports": "BRQ_OSR_KTW_BTS_PRG_VIE_BUD"
+  },
+  "CZLU": {
+    "name": "Czeska i szersze środowisko",
+    "ports": "BTS_KSC_BRQ_BUD_CSO_DRS_KTW_KRK_LEJ_LNZ_FMM_MUC_NUE_OSR_PRG_KLV_PED_SXF_SZG_TXL_VIE_WRO"
+  },
+  "ESDA": {
+    "name": "Andaluzja (ES)",
+    "ports": "LEI_ODB_GRX_XRY_AGP_SVQ_OZP"
+  },
+  "ESCT": {
+    "name": "Katalonia (ES)",
+    "ports": "BCN_GRO_REU_ILD"
+  },
+  "DEBW": {
+    "name": "Baden-Württemberg (DE)",
+    "ports": "FKB_FDH_LHA_MHG_STR"
+  },
+  "DEBA": {
+    "name": "Bavaria (DE)",
+    "ports": "IGS_HOQ_FMM_MUC_BYU_AGB_GHF_ZCD_NUE"
+  },
+  "DEHE": {
+    "name": "Hesja (DE)",
+    "ports": "KSF_FRA_FRZ_WIE"
+  },
+  "DELS": {
+    "name": "Dolna Saksonia (DE)",
+    "ports": "HAJ _BWE_BMK_EME_ZCN_NDZ"
+  },
+  "DEMV": {
+    "name": "Mecklenburg-Vorpommern (DE)",
+    "ports": "FNB_HDF_RLG_REB"
+  },
+  "DERW": {
+    "name": "Nadrenia Północna-Westfalia (DE)",
+    "ports": "FMO_AAH_MGL_DUS_DTM_CGN_GKE_SGE_PAD_NRN_QOE_ZPQ"
+  },
+  "DERP": {
+    "name": "Nadrenia-Palatynat (DE)",
+    "ports": "HHN_ZQW_SPM_RMS"
+  },
+  "DESR": {
+    "name": "Saara (DE)",
+    "ports": "SCN"
+  },
+  "DESA": {
+    "name": "Saksonia-Anhalt (DE)",
+    "ports": "LEJ_DRS_CSO"
+  },
+  "DESH": {
+    "name": "Schleswig-Holstein (DE)",
+    "ports": "KEL_LBC_HEI_HGL_GWT_WBG"
+  },
+  "DETH": {
+    "name": "Turyngia (DE)",
+    "ports": "AOC_ERF"
+  },
+  "ADRIATIC": {
+    "name": "Wybrzeżu Adriatyku",
+    "ports": "PUY_RJK_SPU_DBV_ZAD"
+  },
+  "ARABIA": {
+    "name": "Półwysep Arabski",
+    "ports": "DXB_HAS_AHB_TUU_KWI_MED_ELQ_SLL_TIF_SHJ_JED_DMM_YNB_MCT_RUH"
+  },
+  "ATLANTIC": {
+    "name": "Atlantyk",
+    "ports": "GMZ_VXE_FNC_SID_RAI_TFN_BVC_FUE_VDE_LPA_ACE_PXO_TFS_PDL"
+  },
+  "AZORES": {
+    "name": "Azory",
+    "ports": "PDL_TER"
+  },
+  "MADEIRA": {
+    "name": "Madera",
+    "ports": "FNC_PXO"
+  },
+  "CANARIES": {
+    "name": "Wyspy Kanaryjskie",
+    "ports": "SPC_FUE_VDE_LPA_ACE_TFS_GMZ_TFN"
+  },
+  "CAPEVERDE": {
+    "name": "Wyspy Zielonego Przylądka",
+    "ports": "SID_RAI_BVC"
+  },
+  "CORSICA": {
+    "name": "Korsyka",
+    "ports": "AJA_BIA_FSC_PRP_CLY"
+  },
+  "GR_CRETE": {
+    "name": "Grecja: Kreta",
+    "ports": "CHQ_HER_JSH"
+  },
+  "CYPRUS": {
+    "name": "Cypr",
+    "ports": "ECN_LCA_PFO"
+  },
+  "SARDINIA": {
+    "name": "Sardynia",
+    "ports": "CAG_AHO_OLB"
+  },
+  "SICILY": {
+    "name": "Sycylia",
+    "ports": "CTA_CIY_PMO_PNL_TPS"
+  },
+  "ENGLAND": {
+    "name": "Anglia",
+    "ports": "SEN_NQY_EXT_JER_BRS_GCI_BOH_NWI_NCL_STN_MME_LTN_MAN_LHR_LPL_LGW_LBA_CWL_HUY_EMA_DSA_BLK_BHX_SOU"
+  },
+  "GR_ISLANDS": {
+    "name": "Grecja: wyspy",
+    "ports": "CFU_KGS_JMK_HER_PVK_JTR_JKH_SMI_CHQ_MJT_JSI_ZTH_EFL_RHO"
+  },
+  "CHANNEL_ISLANDS": {
+    "name": "Wyspy Normandzkie",
+    "ports": "GCI_JER_ACI"
+  },
+  "MEDITERRANEAN_CO": {
+    "name": "Wybrzeże Morza Śródziemnego",
+    "ports": "ALG_ORN_HBE_AHU_NDR_TTU_DJE_MIR_NBE_TUN_AGP_ALC_BCN_GRO_LEI_REU_VLC_XRY_GIB_AVN_BZR_CCF_FNI_MPL_MRS_NCE_PGF_TLN_ATH_GPA_KLX_KVA_SKG_VOL_DBV_SPU_ZAD_PUY_RJK_ZAG_AOI_BDS_PSR_REG_RMI_TRS_TSF_VCE_TLV_AYT_"
+  },
+  "MEDITERRANEAN_IS": {
+    "name": "Wyspy Morza Śródziemnego",
+    "ports": "ECN_LCA_PFO_IBZ_MAH_PMI_AJA_BIA_FSC_CFU_CHQ_EFL_HER_JKH_JMK_JSI_JTR_KGS_MJT_PVK_RHO_SMI_ZTH_AHO_CAG_OLB_CTA_LMP_PMO_TPS_MLA"
+  },
+  "SCANDINAVIA": {
+    "name": "Skandynawia",
+    "ports": "ANX_KKN_HAU_OSL_SVG_BDU_LKL_KRS_TRD_BOO_LYR_AES_MOL_TRF_ALF_EVE_TOS_BGO_RYG_LLA_KSD_KLR_JKG_BMA_GSE_NYO_VXO_VBY_AGH_VST_UME_SFT_NRK_MMX_ARN_GOT_BLL_AAR_KRP_AAL_CPH"
+  },
+  "SCOTLAND": {
+    "name": "Szkocja",
+    "ports": "EDI_WIC_BEB_TRE_LSI_PIK_BRR_TRE_SYY_KOI_ILY_GLA_CAL_WIC_ABZ_SYY_LSI_INV"
+  },
+  "ESBA": {
+    "name": "Baleary wyspy",
+    "ports": "PMI_IBZ_MAH"
+  },
+  "ESGA": {
+    "name": "Galicja (ES)",
+    "ports": "LCG_SCQ_VGO"
+  },
+  "ESBS": {
+    "name": "Baskonia (ES)",
+    "ports": "BIO_EAS"
+  },
+  "BALTIC": {
+    "name": "Kraje bałtyckie",
+    "ports": "TLL_TAY_KUN_PLQ_VNO_RIX"
+  },
+  "ALPS": {
+    "name": "Alpy góry",
+    "ports": "SZG_INN_GRZ_FMM_MUC_MXP_BGY_LIN_TRN_GVA_ZRH_BRN_GNB_CMF"
+  },
+  "EUMAJOR": {
+    "name": "Główne europejskie lotniska",
+    "ports": "BCN_LGW_DUB_STN_OSL_DUS_PMI_LTN_MAN_AMS_TXL_FCO_ORY_ATH_WAW_CPH_BGY_AGP_MXP_SAW_CGN_EDI_CDG_HAM_BHX_AYT_MAD_MUC_PRG_BUD_STR_SXF_ALC_BRU_GLA_CRL_VIE_BGO_LPA_LYS_ARN_GVA_OTP_FRA_BRQ_BTS"
+  },
+  "TUSCANY": {
+    "name": "Toskania",
+    "ports": "PSA_FLR"
+  },
+  "NYC_ALL": {
+    "name": "Nowy Jork",
+    "ports": "JFK_LGA_EWR"
+  },
+  "XXX": {
+    "name": "Gdziekolwiek",
+    "ports": "NULL"
+  },
+  "IT_NORTH": {
+    "name": "północne Włochy",
+    "ports": "BLQ_FRL_PMF_RAN_RMI_TSF_VCE_VRN_ALL_GOA_BGY_MXP_LIN_CUF_TRN"
+  },
+  "IT_SOUTH": {
+    "name": "południowe Włochy",
+    "ports": "BRI_BDS_FOG_CRV_SUF_REG_NAP_QSR"
+  },
+  "IT_CENTRAL": {
+    "name": "środkowe Włochy",
+    "ports": "AOI_FLR_PSA_PSR_FCO_CIA_PEG"
+  },
+  "PL_CENTRAL": {
+    "name": "centralna Polska",
+    "ports": "WAW_WMI_LCJ_RDO"
+  },
+  "PL_EAST": {
+    "name": "wschodnia Polska",
+    "ports": "RZE_LUZ"
+  },
+  "PL_WEST": {
+    "name": "zachodnia Polska",
+    "ports": "SZZ_POZ_IEG"
+  },
+  "PL_SOUTH": {
+    "name": "południowa Polska",
+    "ports": "WRO_KTW_KRK"
+  },
+  "PL_NORTH": {
+    "name": "północna Polska",
+    "ports": "GDN_BZG_SZY"
+  },
+  "VAL_ALL": {
+    "name": "Walencja",
+    "ports": "VLC_ALC_CDT"
+  },
+  "TUR_ALL": {
+    "name": "Turyn",
+    "ports": "TRN_CUF"
+  },
+  "GR_ATTICA": {
+    "name": "Grecja: Attyka",
+    "ports": "ATH_KIT"
+  },
+  "GR_IONIAN": {
+    "name": "Grecja: wyspy Jońskie",
+    "ports": "CFU_EFL_ZTH"
+  },
+  "GR_EPIRUS": {
+    "name": "Grecja: Epir",
+    "ports": "IOA_PVK"
+  },
+  "GR_NORTHAEGEAN": {
+    "name": "Grecja: wyspy Egejskie Północne",
+    "ports": "LXS_MJT_SMI_JKH_JIK"
+  },
+  "GR_SOUTHAEGEAN": {
+    "name": "Grecja: wyspy Egejskie Południow",
+    "ports": "KGS_RHO_JTY_JKL_AOK_MLO_JMK_JNX_PAS_JTR_JSY"
+  },
+  "GR_THESSALY": {
+    "name": "Grecja: Tesalia",
+    "ports": "JSI_VOL"
+  },
+  "BKK_ALL": {
+    "name": "Bangkok",
+    "ports": "DMK_BKK"
+  },
+  "FRNO": {
+    "name": "Normandia",
+    "ports": "DOL_CFR"
+  },
+  "FRBR": {
+    "name": "Bretania",
+    "ports": "NTE_DNR_RNS_LRT"
+  },
+  "BALKANS": {
+    "name": "Bałkany",
+    "ports": "TIA_SJJ_TZL_TGD_TIV_OHD_SKP_BEG_INI_PRN"
+  },
+  "SKNE": {
+    "name": "Słowacji i lotniska w pobliżu",
+    "ports": "BTS_KSC_TAT_BRQ_OSR_VIE_BUD_DEB_KRK_KTW"
+  },
+  "NO_CENTRAL": {
+    "name": "centralna Norwegia",
+    "ports": "OSY_RRS_RVK_TRD"
+  },
+  "NO_SOUTH": {
+    "name": "południowa Norwegia",
+    "ports": "KRS_OSL_RYG_SKE_TRF_VDB"
+  },
+  "NO_WEST": {
+    "name": "zachodnia Norwegia",
+    "ports": "AES_BGO_FDE_FRO_HOV_KSU_MOL_SDN_SOG_SVG"
+  },
+  "NO_NORTH": {
+    "name": "północna Norwegia",
+    "ports": "ALF_ANX_BDU_BJF_BNN_BOO_BVG_EVE_HAA_HFT_HVG_KKN_LKL_LKN_MEH_MJF_MQN_NVK_RET_SKN_SOJ_SSJ_SVJ_TOS_VAW_VDS"
+  },
+  "RIV_FR": {
+    "name": "Riwiera Francuska (Lazurowe Wybr",
+    "ports": "NCE_TLN"
+  },
+  "RIV_IT": {
+    "name": "Riwiera Włoska (Wybrzeżu Ligurii",
+    "ports": "GOA_PSA"
+  },
+  "TYO_ALL": {
+    "name": "Tokio",
+    "ports": "HND_NRT"
+  },
+  "MEL_ALL": {
+    "name": "Melbourne",
+    "ports": "MEL_AVV"
+  },
+  "JKT_ALL": {
+    "name": "Dżakarta",
+    "ports": "HLP_CGK"
+  },
+  "HUNE": {
+    "name": "Węgry i lotniska w pobliżu",
+    "ports": "BUD_DEB_SOB_BTS_KSC_TAT_VIE_GRZ_LJU_OSI_ZAG_TSR_BRQ"
+  },
+  "PERSGULF": {
+    "name": "Zatoka Perska",
+    "ports": "KWI_DMM_HOF_BAH_DOH_AUH_DWC_DXB_SHJ_RKT_OHS_MCT_BND"
+  },
+  "REDSEA": {
+    "name": "Wybrzeże Morza Czerwonego",
+    "ports": "ETH_VDA_SSH_HRG_JIB_GIZ_JED_YNB"
+  },
+  "CARIBBEAN": {
+    "name": "Karaiby",
+    "ports": "HAV_VRA_CYO_HOG_MBJ_SDQ_LRM_PUJ_POP_PTP_FDF_CUN_BGI"
+  },
+  "AE": {
+    "name": "Zjednoczone Emiraty Arabskie",
+    "ports": "AUH_DXB_RKT_SHJ_DWC"
+  },
+  "AF": {
+    "name": "Afganistan",
+    "ports": "KBL"
+  },
+  "AG": {
+    "name": "Antigua i Barbuda",
+    "ports": "ANU"
+  },
+  "AL": {
+    "name": "Albania",
+    "ports": "TIA"
+  },
+  "AM": {
+    "name": "Armenia",
+    "ports": "EVN_LWN"
+  },
+  "AR": {
+    "name": "Argentyna",
+    "ports": "EZE"
+  },
+  "AT": {
+    "name": "Austria",
+    "ports": "GRZ_INN_SZG_VIE_KLU"
+  },
+  "AU": {
+    "name": "Australia",
+    "ports": "ASP_BNE_OOL_CNS_ISA_MCY_MKY_PPP_ROK_TSV_ABX_HBA_LST_MEL_ADL_KTA_KGI_PHE_PER_CBR_CFS_SYD_TMW_EMD_DRW_AYQ_HVB_BDB_BNK_BME_NTL_HTI_GET_GLT_MQL_ZNE_PQQ"
+  },
+  "AZ": {
+    "name": "Azerbejdżan",
+    "ports": "GYD"
+  },
+  "BA": {
+    "name": "Bośnia i Hercegowina",
+    "ports": "OMO_SJJ_BNX_TZL"
+  },
+  "BB": {
+    "name": "Barbados",
+    "ports": "BGI"
+  },
+  "BD": {
+    "name": "Bangladesz",
+    "ports": "CGP_DAC"
+  },
+  "BE": {
+    "name": "Belgia",
+    "ports": "ANR_BRU_CRL_LGG_OST"
+  },
+  "BG": {
+    "name": "Bułgaria",
+    "ports": "BOJ_PDV_SOF_VAR"
+  },
+  "BH": {
+    "name": "Bahrajn",
+    "ports": "BAH"
+  },
+  "BY": {
+    "name": "Białoruś",
+    "ports": "MSQ"
+  },
+  "CA": {
+    "name": "Kanada",
+    "ports": "YUL_YYZ"
+  },
+  "CH": {
+    "name": "Szwajcaria",
+    "ports": "GVA_ZRH_BSL"
+  },
+  "CK": {
+    "name": "Wyspy Cooka",
+    "ports": "RAR"
+  },
+  "CN": {
+    "name": "Chiny",
+    "ports": "TSN_TYN_CAN_CSX_NNG_CGO_WUH_XIY_XMN_KHN_NGB_NKG_HFE_CKG_KWE_URC_HRB_DLC_SYX_JHG_HAK_SHE_CGQ_NTG_HET_BAV_NNY_XNN_WUX_WNZ_YNJ_LHW_JIQ_NBS_AVA_WGN"
+  },
+  "CU": {
+    "name": "Kuba",
+    "ports": "CYO_SCU_HAV_HOG_VRA"
+  },
+  "CV": {
+    "name": "Republika Zielonego Przylądka",
+    "ports": "SID_BVC_MMO_SNE_VXE_RAI_SFL"
+  },
+  "CY": {
+    "name": "Cypr",
+    "ports": "LCA_PFO_ECN"
+  },
+  "CZ": {
+    "name": "Czechy",
+    "ports": "KLV_OSR_PED_PRG_BRQ"
+  },
+  "DE": {
+    "name": "Niemcy",
+    "ports": "SXF_DRS_ERF_FRA_FMO_HAM_CGN_DUS_MUC_NUE_LEJ_SCN_STR_TXL_HAJ_BRE_HHN_PAD_DTM_FDH_GWT_RLG_FMM_FKB_NRN_HDF_BER"
+  },
+  "DK": {
+    "name": "Dania",
+    "ports": "AAR_BLL_CPH_AAL"
+  },
+  "DO": {
+    "name": "Dominikana",
+    "ports": "LRM_PUJ_POP_SDQ"
+  },
+  "DZ": {
+    "name": "Algieria",
+    "ports": "BJA_ALG_CZL_TLM_ORN"
+  },
+  "EE": {
+    "name": "Estonia",
+    "ports": "TLL"
+  },
+  "EG": {
+    "name": "Egipt",
+    "ports": "CAI_HRG_LXR_HBE_SSH_RMF_ATZ_HMB"
+  },
+  "EH": {
+    "name": "Sahara Zachodnia",
+    "ports": "VIL_EUN"
+  },
+  "ER": {
+    "name": "Erytrea",
+    "ports": "ASM"
+  },
+  "ES": {
+    "name": "Hiszpania",
+    "ports": "FUE_VDE_SPC_LPA_ACE_TFS_TFN_ALC_LEI_OVD_BIO_BCN_LCG_GRO_GRX_IBZ_XRY_MAD_AGP_MAH_RMU_REU_EAS_SCQ_VLC_VLL_VIT_VGO_SDR_ZAZ_SVQ_PMI_GMZ_CDT"
+  },
+  "FI": {
+    "name": "Finlandia",
+    "ports": "HEL_KTT_LPP_OUL_RVN_TMP_TKU"
+  },
+  "FJ": {
+    "name": "Fidżi",
+    "ports": "NAN"
+  },
+  "FO": {
+    "name": "Wyspy Owcze",
+    "ports": "FAE"
+  },
+  "FR": {
+    "name": "Francja",
+    "ports": "BOD_EGC_PIS_LIG_TLS_PUF_LDE_BVE_BIQ_RDZ_DLE_ETZ_BIA_CLY_FSC_AJA_CMF_CFE_LYS_GNB_CCF_MRS_NCE_PGF_MPL_BZR_BVA_XCR_TUF_CDG_ORY_LIL_BES_DNR_DOL_CFR_RNS_NTE_MLH_SXB_TLN_FNI_LRH"
+  },
+  "GB": {
+    "name": "Wielka Brytania",
+    "ports": "BFS_BHD_LDY_BHX_MAN_NQY_CWL_BRS_LPL_LTN_BOH_SOU_LGW_LCY_LHR_SEN_HUY_LBA_NCL_MME_EMA_WIC_ABZ_INV_GLA_EDI_PIK_NWI_STN_EXT_DSA_VLY"
+  },
+  "GE": {
+    "name": "Gruzja",
+    "ports": "BUS_KUT_TBS"
+  },
+  "GG": {
+    "name": "Guernsey",
+    "ports": "GCI"
+  },
+  "GI": {
+    "name": "Gibraltar",
+    "ports": "GIB"
+  },
+  "GM": {
+    "name": "Gambia",
+    "ports": "BJL"
+  },
+  "GP": {
+    "name": "Gwadelupa",
+    "ports": "PTP"
+  },
+  "GR": {
+    "name": "Grecja",
+    "ports": "VOL_JKH_IOA_HER_EFL_KLX_KGS_AOK_CFU_KVA_JMK_PVK_RHO_GPA_CHQ_JSI_SMI_JTR_SKG_ZTH_ATH"
+  },
+  "HK": {
+    "name": "Hongkong",
+    "ports": "HKG"
+  },
+  "HR": {
+    "name": "Chorwacja",
+    "ports": "DBV_OSI_PUY_RJK_SPU_ZAG_ZAD"
+  },
+  "HU": {
+    "name": "Węgry",
+    "ports": "BUD_DEB"
+  },
+  "ID": {
+    "name": "Indonezja",
+    "ports": "DPS"
+  },
+  "IE": {
+    "name": "Irlandia",
+    "ports": "ORK_DUB_NOC_KIR_SNN_CFN"
+  },
+  "IL": {
+    "name": "Izrael",
+    "ports": "TLV_ETM_SDV"
+  },
+  "IM": {
+    "name": "Wyspa Man",
+    "ports": "IOM"
+  },
+  "IN": {
+    "name": "Indie",
+    "ports": "AMD_BOM_BDQ_GOI_IDR_NAG_PNQ_RPR_STV_UDR_IXA_IXB_BBI_CCU_IMF_JRH_PAT_IXR_VTZ_IXD_ATQ_VNS_IXC_DED_DEL_JAI_IXJ_IXL_LKO_SXR_BLR_VGA_CJB_COK_CCJ_HYD_IXM_IXE_MAA_IXZ_RJA_TIR_TRZ_TRV_HBX_GAU_DMU_DIB_GOP_TCR_CNN"
+  },
+  "IQ": {
+    "name": "Irak",
+    "ports": "BSR_EBL_BGW_ISU_NJF"
+  },
+  "IR": {
+    "name": "Iran",
+    "ports": "SYZ_IKA_MHD_LRR"
+  },
+  "IS": {
+    "name": "Islandia",
+    "ports": "IFJ_KEF"
+  },
+  "IT": {
+    "name": "Włochy",
+    "ports": "CRV_BRI_PSR_BDS_SUF_CTA_LMP_PNL_PMO_REG_TPS_AHO_CAG_OLB_MXP_BGY_TRN_GOA_LIN_PMF_CUF_BLQ_TSF_TRS_RMI_VRN_VCE_CIA_FCO_NAP_PSA_FLR_PEG_AOI_CIY"
+  },
+  "JE": {
+    "name": "Jersey",
+    "ports": "JER"
+  },
+  "JM": {
+    "name": "Jamajka",
+    "ports": "MBJ"
+  },
+  "JO": {
+    "name": "Jordania",
+    "ports": "AMM_AQJ"
+  },
+  "KE": {
+    "name": "Kenia",
+    "ports": "MBA_NBO"
+  },
+  "KG": {
+    "name": "Kirgistan",
+    "ports": "FRU_OSS"
+  },
+  "KW": {
+    "name": "Kuwejt",
+    "ports": "KWI"
+  },
+  "KZ": {
+    "name": "Kazachstan",
+    "ports": "ALA_TSE"
+  },
+  "LB": {
+    "name": "Liban",
+    "ports": "BEY"
+  },
+  "LK": {
+    "name": "Sri Lanka",
+    "ports": "CMB"
+  },
+  "LT": {
+    "name": "Litwa",
+    "ports": "KUN_PLQ_VNO"
+  },
+  "LU": {
+    "name": "Luksemburg",
+    "ports": "LUX"
+  },
+  "LV": {
+    "name": "Łotwa",
+    "ports": "LPX_RIX"
+  },
+  "MA": {
+    "name": "Maroko",
+    "ports": "AGA_FEZ_ERH_OUD_RBA_CMN_RAK_OZZ_AHU_TTU_TNG_ESU_NDR_OZG"
+  },
+  "MD": {
+    "name": "Mołdawia",
+    "ports": "KIV"
+  },
+  "ME": {
+    "name": "Czarnogóra",
+    "ports": "TGD_TIV"
+  },
+  "MK": {
+    "name": "Macedonia",
+    "ports": "OHD_SKP"
+  },
+  "MM": {
+    "name": "Mjanma",
+    "ports": "MDL_RGN"
+  },
+  "MQ": {
+    "name": "Martynika",
+    "ports": "FDF"
+  },
+  "MR": {
+    "name": "Mauretania",
+    "ports": "NKC"
+  },
+  "MT": {
+    "name": "Malta",
+    "ports": "MLA"
+  },
+  "MU": {
+    "name": "Mauritius",
+    "ports": "MRU"
+  },
+  "MV": {
+    "name": "Malediwy",
+    "ports": "MLE"
+  },
+  "MX": {
+    "name": "Meksyk",
+    "ports": "PVR_CUN"
+  },
+  "MY": {
+    "name": "Malezja",
+    "ports": "KUL"
+  },
+  "MZ": {
+    "name": "Mozambik",
+    "ports": "BEW_MPM_UEL_TET"
+  },
+  "NL": {
+    "name": "Holandia",
+    "ports": "AMS_MST_EIN_GRQ_RTM"
+  },
+  "NO": {
+    "name": "Norwegia",
+    "ports": "AES_ANX_ALF_BNN_BOO_BGO_BJF_KRS_BDU_EVE_FRO_OSL_HAU_HAA_KSU_KKN_MOL_MJF_LKL_RRS_SSJ_TOS_TRF_TRD_SVG_HFT_HVG_MEH_VDS_HOV_BVG_FDE_LKN_OSY_MQN_RVK_RET_SDN_SOG_SVJ_SOJ_VAW"
+  },
+  "NP": {
+    "name": "Nepal",
+    "ports": "KTM"
+  },
+  "NZ": {
+    "name": "Nowa Zelandia",
+    "ports": "AKL_CHC_ZQN_WLG"
+  },
+  "OM": {
+    "name": "Oman",
+    "ports": "MCT_SLL_OHS"
+  },
+  "PG": {
+    "name": "Papua-Nowa Gwinea",
+    "ports": "POM"
+  },
+  "PK": {
+    "name": "Pakistan",
+    "ports": "LYP_KHI_LHE_MUX_PEW_UET_ISB_SKT"
+  },
+  "PL": {
+    "name": "Polska",
+    "ports": "SZY_GDN_KRK_KTW_POZ_RZE_SZZ_WAW_WRO_BZG_LCJ_WMI_LUZ"
+  },
+  "PT": {
+    "name": "Portugalia",
+    "ports": "FAO_TER_PDL_OPO_PXO_LIS_FNC"
+  },
+  "QA": {
+    "name": "Katar",
+    "ports": "DOH"
+  },
+  "RO": {
+    "name": "Rumunia",
+    "ports": "BCM_CND_CLJ_CRA_IAS_OTP_SBZ_SUJ_SCV_TGM_TSR"
+  },
+  "RS": {
+    "name": "Serbia",
+    "ports": "BEG_INI"
+  },
+  "RU": {
+    "name": "Rosja",
+    "ports": "IKT_UUD_LED_MMK_KGD_KEJ_OMS_KRR_MCX_MRV_ROV_AER_ASF_VOG_CEK_PEE_SGC_SVX_SVO_VOZ_VKO_SCW_KZN_REN_UFA_DME_OVB_TJM_KUF_GOJ_TOF_ARH_KJA_PES_GRV_NAL_OGZ_KVX_CSY_ZIA_NBC_ULV_IGT"
+  },
+  "SA": {
+    "name": "Arabia Saudyjska",
+    "ports": "AHB_DMM_GIZ_ELQ_HAS_JED_MED_RUH_SHW_TUU_TIF_YNB_AJF_WAE"
+  },
+  "SC": {
+    "name": "Seszele",
+    "ports": "SEZ"
+  },
+  "SD": {
+    "name": "Sudan",
+    "ports": "KRT"
+  },
+  "SE": {
+    "name": "Szwecja",
+    "ports": "GOT_NYO_MMX_VXO_KRN_UME_VST_LLA_ARN_VBY_OSD_KSD"
+  },
+  "SG": {
+    "name": "Singapur",
+    "ports": "SIN"
+  },
+  "SI": {
+    "name": "Słowenia",
+    "ports": "LJU"
+  },
+  "SJ": {
+    "name": "Svalbard i Jan Mayen",
+    "ports": "LYR"
+  },
+  "SK": {
+    "name": "Słowacja",
+    "ports": "BTS_KSC_TAT"
+  },
+  "SN": {
+    "name": "Senegal",
+    "ports": "DSS"
+  },
+  "SO": {
+    "name": "Somalia",
+    "ports": "HGA"
+  },
+  "TH": {
+    "name": "Tajlandia",
+    "ports": "KBV_HKT_BKK"
+  },
+  "TM": {
+    "name": "Turkmenistan",
+    "ports": "ASB"
+  },
+  "TN": {
+    "name": "Tunezja",
+    "ports": "MIR_TUN_DJE_NBE"
+  },
+  "TO": {
+    "name": "Tonga",
+    "ports": "TBU"
+  },
+  "TR": {
+    "name": "Turcja",
+    "ports": "ESB_ADA_AYT_GZT_KYA_MZH_VAS_MLX_ASR_DNZ_IST_ADB_DLM_EZS_DIY_ERC_ERZ_TZX_VAN_BAL_BJV_SAW_KSY_KCM_AJI_EDO_SZF_MQM_AOE_MSR_NOP_TEQ_HTY_GZP_KZR_GNY_OGU_BGG"
+  },
+  "TZ": {
+    "name": "Tanzania",
+    "ports": "ZNZ"
+  },
+  "UA": {
+    "name": "Ukraina",
+    "ports": "KBP_SIP_IEV_LWO_ODS_OZH_HRK"
+  },
+  "US": {
+    "name": "Stany Zjednoczone",
+    "ports": "BOS_OAK_SFO_LAX_EWR_FLL_MIA_SEA_PVD_SWF_IAD_HNL_DEN_RSW_JFK_BDL_ORD_MSP_LAS_MCO"
+  },
+  "XK": {
+    "name": "Kosowo",
+    "ports": "PRN"
+  },
+  "ZA": {
+    "name": "Republika Południowej Afryki",
+    "ports": "CPT_JNB"
+  },
+  "ZW": {
+    "name": "Zimbabwe",
+    "ports": "BUQ_VFA_HRE"
+  },
+  "XXX": {
+    "name": "Gdziekolwiek",
+    "ports": "XXX"
+  }
+}

@@ -1,51 +1,50 @@
-import 'package:azair_client/azair/model/AirportModel.dart';
+import 'dart:math' as math;
+
+import 'package:azair_client/azair/model/AirportEntry.dart';
 import 'package:azair_client/azair/model/SearchModel.dart';
 import 'package:azair_client/azair/page/ResultsPage.dart';
 import 'package:azair_client/azair/service/AzairService.dart';
 import 'package:azair_client/azair/widget/field/AirportPicker.dart';
+import 'package:azair_client/azair/widget/field/DatePeriodPicker.dart';
 import 'package:azair_client/azair/widget/field/LongCounterField.dart';
 import 'package:azair_client/general/widget/Logo.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
 class SearchPage extends StatefulWidget {
-  final List<AirportModel> airports;
-
-  SearchPage({this.airports});
-
   @override
   _SearchPageState createState() => _SearchPageState();
 }
 
 class _SearchPageState extends State<SearchPage> {
-  var minDays = 2;
-  var maxDays = 5;
-  var adults = 1;
-  var maxChangesCount = 0;
-  final fromAirports = List<AirportModel>();
-  final toAirports = List<AirportModel>();
+  final searchModel = SearchModel(
+      minDaysStay: 2,
+      maxDaysStay: 5,
+      adults: 1,
+      maxChangesCount: 0,
+      fromAirports: [],
+      toAirports: [],
+      departureDate: null,
+      arrivalDate: null);
+
+  final airports = List<AirportEntry>();
 
   final azairService = AzairService();
 
   @override
   void initState() {
     super.initState();
+
+    init();
+  }
+
+  init() async {
+    final items = await azairService.fetchAirports(context);
+    setState(() {
+      airports.addAll(items);
+    });
   }
 
   Future<void> goToResults() async {
-    final searchModel = SearchModel(
-        adults: adults,
-        maxChangesCount: maxChangesCount,
-        maxDaysStay: maxDays,
-        minDaysStay: minDays,
-        fromAirports: fromAirports,
-        toAirports: toAirports,
-        departureDate:
-            DateFormat('yyyy-MM-dd').parse('2020-01-01').millisecondsSinceEpoch,
-        arrivalDate: DateFormat('yyyy-MM-dd')
-            .parse('2020-02-29')
-            .millisecondsSinceEpoch);
-
     Navigator.push(
       context,
       MaterialPageRoute(
@@ -71,15 +70,57 @@ class _SearchPageState extends State<SearchPage> {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 35),
                 child: SizedBox(
-                    height: 150,
+                    height: 100,
                     child: FittedBox(fit: BoxFit.fill, child: Logo())),
               ),
               Row(
                 children: <Widget>[
                   Flexible(
                     child: AirportPicker(
-                      label: "Z lotniska",
-                      airports: widget.airports,
+                      leading: Icon(Icons.airplanemode_active),
+                      label: "Skąd",
+                      airports: airports,
+                      selectedAirportIds: searchModel.fromAirports,
+                      onChange: (value) {
+                        setState(() {
+                          searchModel.fromAirports = value;
+                        });
+                      },
+                    ),
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  IconButton(
+                    onPressed: () {
+                      setState(() {
+                        final tempFromAirports =
+                            List<String>.from(searchModel.fromAirports);
+                        searchModel.fromAirports = searchModel.toAirports;
+                        searchModel.toAirports = tempFromAirports;
+                      });
+                    },
+                    icon: Icon(Icons.sync),
+                  )
+                ],
+              ),
+              Row(
+                children: <Widget>[
+                  Flexible(
+                    child: AirportPicker(
+                      leading: Transform.rotate(
+                          angle: math.pi,
+                          child: Icon(Icons.airplanemode_active)),
+                      label: "Dokąd",
+                      airports: airports,
+                      selectedAirportIds: searchModel.toAirports,
+                      onChange: (value) {
+                        setState(() {
+                          searchModel.toAirports = value;
+                        });
+                      },
                     ),
                   )
                 ],
@@ -90,17 +131,36 @@ class _SearchPageState extends State<SearchPage> {
               Row(
                 children: <Widget>[
                   Flexible(
+                    child: DatePeriodPicker(
+                        fromDate: searchModel.departureDate,
+                        toDate: searchModel.arrivalDate,
+                        onChange: (from, to) {
+                          setState(() {
+                            searchModel.departureDate = from;
+                            searchModel.arrivalDate = to;
+                          });
+                        }),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Row(
+                children: <Widget>[
+                  Flexible(
                     flex: 15,
                     child: LongCounterField(
-                      min: 0,
+                      min: 1,
                       max: 10,
-                      value: adults,
+                      value: searchModel.adults,
                       onChange: (value) {
                         setState(() {
-                          adults = value;
+                          searchModel.adults = value;
                         });
                       },
                       label: "Liczba osób",
+                      icon: Icons.person,
                     ),
                   ),
                 ],
@@ -115,17 +175,19 @@ class _SearchPageState extends State<SearchPage> {
                     child: LongCounterField(
                       min: 0,
                       max: 30,
-                      value: minDays,
+                      value: searchModel.minDaysStay,
                       onChange: (value) {
                         setState(() {
-                          minDays = value;
+                          searchModel.minDaysStay = value;
 
-                          if (minDays > maxDays) {
-                            maxDays = minDays;
+                          if (searchModel.minDaysStay >
+                              searchModel.maxDaysStay) {
+                            searchModel.maxDaysStay = searchModel.minDaysStay;
                           }
                         });
                       },
                       label: "Minimalna liczba dni",
+                      icon: Icons.timer,
                     ),
                   ),
                   Flexible(flex: 1, child: Container()),
@@ -134,17 +196,19 @@ class _SearchPageState extends State<SearchPage> {
                     child: LongCounterField(
                       min: 0,
                       max: 30,
-                      value: maxDays,
+                      value: searchModel.maxDaysStay,
                       onChange: (value) {
                         setState(() {
-                          maxDays = value;
+                          searchModel.maxDaysStay = value;
 
-                          if (minDays > maxDays) {
-                            minDays = maxDays;
+                          if (searchModel.minDaysStay >
+                              searchModel.maxDaysStay) {
+                            searchModel.minDaysStay = searchModel.maxDaysStay;
                           }
                         });
                       },
                       label: "Maksymalna liczba dni",
+                      icon: Icons.timer,
                     ),
                   ),
                 ],
@@ -158,13 +222,14 @@ class _SearchPageState extends State<SearchPage> {
                     child: LongCounterField(
                       min: 0,
                       max: 5,
-                      value: maxChangesCount,
+                      value: searchModel.maxChangesCount,
                       onChange: (value) {
                         setState(() {
-                          maxChangesCount = value;
+                          searchModel.maxChangesCount = value;
                         });
                       },
                       label: "Maksymalna liczba przesiadek",
+                      icon: Icons.refresh,
                     ),
                   ),
                 ],

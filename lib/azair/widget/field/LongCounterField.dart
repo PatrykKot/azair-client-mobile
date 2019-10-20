@@ -6,8 +6,10 @@ class LongCounterField extends StatefulWidget {
   final int value;
   final int min;
   final int max;
+  final IconData icon;
 
-  LongCounterField({this.onChange, this.label, this.value, this.max, this.min});
+  LongCounterField(
+      {this.onChange, this.label, this.value, this.max, this.min, this.icon});
 
   @override
   _LongCounterFieldState createState() => _LongCounterFieldState();
@@ -23,54 +25,66 @@ class _LongCounterFieldState extends State<LongCounterField> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Text(
-          widget.label,
-          style: TextStyle(fontSize: 15),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Icon(widget.icon),
+            Padding(
+              padding: EdgeInsets.only(right: 4),
+            ),
+            Text(
+              widget.label,
+              style: TextStyle(fontSize: 13),
+            ),
+          ],
         ),
         SizedBox(
-          height: 10,
+          height: 3,
         ),
         Container(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              IconButton(
-                onPressed: () {
-                  final value = widget.value;
-                  if (value > widget.min) {
-                    widget.onChange(value - 1);
-                  }
-                },
-                icon: CircleAvatar(
-                  child: Icon(
-                    Icons.remove,
-                    color: Colors.white,
+              Transform.scale(
+                scale: 0.9,
+                child: CircleAvatar(
+                  child: IconButton(
+                    onPressed: () {
+                      final value = widget.value;
+                      if (value > widget.min) {
+                        widget.onChange(value - 1);
+                      }
+                    },
+                    icon: Icon(
+                      Icons.remove,
+                      color: Colors.white,
+                    ),
                   ),
-                  backgroundColor: Colors.black45,
                 ),
               ),
               Text(
                 widget.value.toString(),
-                style: TextStyle(fontSize: 30),
+                style: TextStyle(fontSize: 25),
               ),
-              IconButton(
-                onPressed: () {
-                  final value = widget.value;
-                  if (value < widget.max) {
-                    widget.onChange(value + 1);
-                  }
-                },
-                icon: CircleAvatar(
-                  child: Icon(
-                    Icons.add,
-                    color: Colors.white,
+              Transform.scale(
+                scale: 0.9,
+                child: CircleAvatar(
+                  child: IconButton(
+                    onPressed: () {
+                      final value = widget.value;
+                      if (value < widget.max) {
+                        widget.onChange(value + 1);
+                      }
+                    },
+                    icon: Icon(
+                      Icons.add,
+                      color: Colors.white,
+                    ),
                   ),
-                  backgroundColor: Colors.black45,
                 ),
               ),
             ],
           ),
-          height: 60,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             border: Border.all(

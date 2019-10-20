@@ -2,6 +2,7 @@ import 'package:azair_client/azair/page/SearchPage.dart';
 import 'package:azair_client/azair/service/AzairService.dart';
 import 'package:azair_client/general/widget/Logo.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 class SplashPage extends StatefulWidget {
   @override
@@ -19,11 +20,11 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   Future<void> init() async {
-    final airports = await azairService.fetchAirports(context);
-
+    await initializeDateFormatting();
+    await Future.delayed(Duration(milliseconds: 500));
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => SearchPage(airports: airports)),
+      MaterialPageRoute(builder: (context) => SearchPage()),
     );
   }
 
